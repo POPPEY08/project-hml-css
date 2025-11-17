@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Feedback Form</title>
+<style>
+  body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 400px;
+    background: white;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  h2 {
+    color: #2e7d32; /* green */
+    margin-bottom: 0;
+  }
+  p.subtitle {
+    color: #b71c1c; /* red */
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Label mundurkan semua label berisi petunjuk */
+  .emotion-label {
+    margin-left: 20px; /* mundur tulisan Please check all emotions */
+  }
+  .satisfaction-label {
+    margin-left: 20px; /* mundur tulisan How satisfied... */
+  }
+
+  /* Checkbox group: lebih maju */
+  .checkbox-group {
+    margin-top: 10px;
+    margin-left: 40px; /* lebih maju dari tulisan Please... */
+  }
+  .checkbox-group label {
+    font-weight: normal;
+    display: block;
+    margin: 4px 0;
+    cursor: pointer;
+  }
+
+  /* Radio group: lebih maju */
+  .radio-group {
+    margin-top: 10px;
+    margin-left: 40px; /* lebih maju dari tulisan How satisfied... */
+  }
+  .radio-group label {
+    font-weight: normal;
+    display: block;
+    margin: 4px 0;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .button-submit {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>My Feedback Form</h2>
+    <p class="subtitle">Kirimkan feedback mu untuk akuu!!</p>
+    <form>
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="hobi">Hobi :</label>
+      <input type="text" id="hobi" name="hobi" />
+
+      <label class="emotion-label">Please check all the emotions that apply to you :</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="emotion" value="angry" /> Angry</label>
+        <label><input type="checkbox" name="emotion" value="sad" /> Sad</label>
+        <label><input type="checkbox" name="emotion" value="happy" /> Happy</label>
+        <label><input type="checkbox" name="emotion" value="ambivalent" /> Ambivalent</label>
+      </div>
+
+      <label class="satisfaction-label">How satisfied were you with our service :</label>
+      <div class="radio-group">
+        <label><input type="radio" name="satisfaction" value="very_satisfied" /> Very Satisfied</label>
+        <label><input type="radio" name="satisfaction" value="satisfied" /> Satisfied</label>
+        <label><input type="radio" name="satisfaction" value="didnt_care" /> Didn't Care</label>
+        <label><input type="radio" name="satisfaction" value="dissatisfied" /> Dissatisfied</label>
+        <label><input type="radio" name="satisfaction" value="very_dissatisfied" /> Very Dissatisfied</label>
+      </div>
+
+      <label for="comments">Further Comments :</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <label for="bio_photo">Bio photo :</label>
+      <input type="file" id="bio_photo" name="bio_photo" />
+
+      <label for="location">Location visited :</label>
+      <select name="location" id="location">
+        <option value="" disabled selected>Select location</option>
+      </select>
+
+      <button type="submit" class="button-submit">Kirim</button>
+    </form>
+  </div>
+</body>
+</html>/

@@ -1,0 +1,28 @@
+<!DOCTYPE html;
+<head>
+<title>Belajar cara memasukan kode PHP</title>
+</head>
+<body>
+
+<p> Belajar tipe data integer dalam PHP
+
+<?PHP
+$umur=21;
+$harga=15000;
+$rugi=-500000;
+
+echo $umur; //21
+echo "<br />";
+echo $harga; //15000
+echo "<br />";
+echo $rugi; //-500000
+?>
+
+<?PHP
+$angka_desimal= 31;
+$angka_heksadesimal= 0x1F; //1F heksadesimal= 31 angka_desimal
+
+echo $angka_desimal; //31
+echo "<br/>";
+echo $angka_hadeksimal; //31
+?>
